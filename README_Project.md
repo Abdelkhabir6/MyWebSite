@@ -71,7 +71,7 @@ Le fichier `config.json` permet de définir l'emplacement du fichier XML à util
 ### Pour créer un fichier exécutable :
 1. Utilisez **PyInstaller** pour générer un exécutable à partir du fichier Python :
    ```bash
-   pyinstaller --onefile --windowed IHM_Modbus.py
+   pyinstaller --onefile --windowed --add-data "CFLogS_API.xml;." IHM_Modbus.py
    ```
    Cela générera un fichier `.exe` dans le dossier `dist`.
 
